@@ -38,14 +38,14 @@ section {
   height: 454px;
   margin: auto;
 }
-.inner-1, .inner-3{
+.inner-1 .inner-3{
   padding: 24px;
   background-color: var(--color-white);
 
   border: 1px solid var(color-gray-200);
   border-radius: 10px;
 }
-.inner-1, .inner-2, .inner.-3 p {
+.inner-1 .inner-2 .inner-3, p {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -175,15 +175,13 @@ li i.ph-info {
   top: -17px;
 }
 .ultimate .inner-2 {
-  padding-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
   background-color: var(--color-gray-900);
 }
 .ultimate .title,
 .ultimate .price {
   color: var(--color-gray-50);
-}
-.inner-1, .inner-2 p {
-  color:  var(--color-purple-100);
 }
 .secondary {
   background-color: var(--color-purple-100);
@@ -203,16 +201,17 @@ li i.ph-info {
 }
 
 /*transition animation */
-.inner:hover {
+.inner-2:hover {
   border-color: var(--color-purple-100);
 }
-.inner {
+.inner-1 .inner-2 .inner-3 {
   transition: border 300ms;
 }
-:hover {
-  transform: scale(1.01);
+.inner-1:hover,
+.inner-2:hover,
+.inner-3:hover {
+  transform: scale(1.05);
 }
-
 section {
   transition: transform 300ms;
   animation: appear 400ms backwards;
